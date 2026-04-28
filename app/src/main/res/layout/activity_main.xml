@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CommandRunner"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统命令执行器"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VirtuAlloc 配置工具"
+        android:textSize="18sp"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#0D1B2A"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第 1 / 4 步"
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前命令："
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cmd appops set com.sting.virtualloc android:mock_location allow"
+        android:textSize="14sp"
+        android:textColor="#00FF00"
+        android:background="#0D1B2A"
+        android:padding="16dp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="执行结果："
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="等待执行..."
+        android:textSize="14sp"
+        android:textColor="#CCCCCC"
+        android:background="#0D1B2A"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="60dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="执行第 1 步"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#1565C0"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnReboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重启手机（强制）"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#D32F2F"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ 重启后请手动长按电源键重启手机"
+        android:textSize="12sp"
+        android:textColor="#FF9800"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+</LinearLayout>
